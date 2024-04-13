@@ -1,0 +1,31 @@
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414; /* Fondo oscuro para que coincida con el tema general */
+  }
+  
+  .optionsTitle {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .optionButton {
+    background-color: #e50914; /* Color rojo característico */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .optionButton:hover {
+    background-color: #f40612;
+  }
+  

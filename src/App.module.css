@@ -55,6 +55,25 @@ main {
   margin-left: 10px; /* Añade un pequeño espacio entre la barra y el botón */
 }
 
+.userButton {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%; /* Hace que el botón sea completamente redondo */
+  overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondo */
+  margin-right: 10px; /* Espacio entre el botón de usuario y la barra de búsqueda */
+}
+
+.userIcon {
+  width: 40px; /* Tamaño de la imagen */
+  height: 40px; /* Tamaño de la imagen para mantener el aspecto de círculo */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio del botón */
+}
+
+
+
+
 .searchHistory {
   background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
   border-radius: 8px; /* Bordes redondeados */
@@ -89,3 +108,4 @@ main {
 .searchHistory li:hover {
   background: rgba(255, 255, 255, 0.3); /* Cambia el fondo al pasar el ratón por encima */
 }
+
