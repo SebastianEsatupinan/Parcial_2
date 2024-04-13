@@ -1,0 +1,91 @@
+
+main {
+  flex: 1;
+  color: #ffffff; /* Texto en blanco para asegurar la legibilidad */
+}
+
+.container {
+  background-color: #141414; 
+  color: #ffffff; 
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem; /* Tamaño de fuente más grande para mayor impacto */
+  color: #e50914; /* Color rojo característico de Netflix */
+  font-weight: bold; /* Negrita para destacar */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente similar a Netflix Sans */
+  text-shadow: 2px 2px 4px rgba(255, 254, 254, 0.8); /* Sombra sutil para un efecto de profundidad */
+  margin: 20px 0; /* Espaciado superior e inferior para definir el área del título */
+  letter-spacing: 1px; /* Espaciado entre letras para una apariencia más refinada */
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center; /* Añade esto para centrar verticalmente */
+}
+
+.searchBar {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  margin-top: 0; /* Elimina el margen superior si no es necesario */
+  height: 40px; /* Ajusta esto para que coincida con la altura del botón si es necesario */
+  width: calc(100% - 80px); /* Ajusta el ancho para compensar el ancho del botón */
+}
+
+.searchButton {
+  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #e50914;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 40px; /* Asegúrate de que esto coincida con la altura de tu searchBar */
+  width: 80px; /* O cualquier otra medida fija que prefieras */
+  margin-left: 10px; /* Añade un pequeño espacio entre la barra y el botón */
+}
+
+.searchHistory {
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-top: 20px; /* Espaciado desde el elemento anterior */
+  padding: 10px; /* Espaciado interno */
+  max-width: 80%; /* Ancho máximo */
+  margin-left: auto; /* Centrado */
+  margin-right: auto; /* Centrado */
+}
+
+.searchHistory h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px; /* Espaciado debajo del título del historial */
+}
+
+.searchHistory ul {
+  list-style-type: none; /* Remueve los estilos por defecto de la lista */
+  padding: 0; /* Remueve el padding por defecto */
+}
+
+.searchHistory li {
+  background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para cada elemento */
+  color: #fff; /* Color de texto */
+  padding: 5px 15px; /* Espaciado interno */
+  margin-bottom: 5px; /* Espaciado entre elementos */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor para indicar interactividad */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.searchHistory li:hover {
+  background: rgba(255, 255, 255, 0.3); /* Cambia el fondo al pasar el ratón por encima */
+}
